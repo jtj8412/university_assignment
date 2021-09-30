@@ -7,7 +7,7 @@ cmds = {'U' : 0, 'D' : 1, 'L' : 2, 'R' : 3}
 
 for plan in plans:
     idx = cmds[plan]
-    nx = dx[idx]; ny = dy[idx]
+    nx = x + dx[idx]; ny = y + dy[idx]
     if nx < 1 or nx > n or ny < 1 or ny > n: continue
     x, y = nx, ny
 

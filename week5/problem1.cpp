@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -8,15 +9,15 @@ int main() {
 
     cin >> n;
     cin.ignore();
-    cin >> str;
+    getline(cin, str);
 
     for (i = 0; str[i] != '\0' && str[i] != '\n'; ++i) {
         if (str[i] == ' ') continue;
-        idx = str[i];
+        idx = str[i] % 5;
         nx = x + dx[idx], ny = y + dy[idx];
         if (nx < 1 || nx > n || ny < 1 || ny > n) continue;
         x = nx; y = ny;
     }
 
-    printf("%d %d", x, y);
+    cout << x << " " << y;
 }
