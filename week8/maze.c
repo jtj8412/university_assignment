@@ -81,6 +81,6 @@ int main() {
     if (find_path(maze, fx, fy, dx, dy, &stk)) {
         print_path(&stk, fx, fy);
     } else {
-        printf("Fath Not Found\n");
+        printf("Path Not Found\n");
     }
 }
