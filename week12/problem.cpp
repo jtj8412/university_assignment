@@ -14,5 +14,5 @@ bool compare(const string& a, const string& b) {
 int main() {
     vector<string> input = {"10", "68", "75", "7", "21", "12"};
     sort(input.begin(), input.end(), compare);
-    for (auto s : input) cout << s << " ";
+    for (auto s : input) cout << s;
 }
